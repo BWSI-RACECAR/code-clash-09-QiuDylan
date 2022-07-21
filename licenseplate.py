@@ -42,7 +42,7 @@ class Solution:
             if i == '.':
                 dot +=1 
         if (len(alphabet) - (count)) != 0 or (len(numbers)- (counter)) != 0:
-            output = (len(alphabet) - len(count))* (len(numbers)- len(counter)) 
+            output = (len(alphabet) - (count))* (len(numbers)- (counter)) 
         return output
 
 
