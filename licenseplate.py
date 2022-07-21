@@ -47,7 +47,7 @@ class Solution:
                 k +=1
         output = 1
 
-        for i in range(24,24+c):
+        for i in range(24,24+count):
             output *=i 
 
         for i in range(7, 7+k):
