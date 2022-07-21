@@ -34,7 +34,7 @@ class Solution:
         dot =0 
         count = 0
         counter = 0
-        for i in range(len(str)):
+        for i in (str):
             if i.isnumeric():
                 counter +=1
             if i.isalpha():
