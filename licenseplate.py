@@ -33,7 +33,7 @@ class Solution:
         numbers  = '1234567890'
         dot =0 
         count = 0
-        counter = []
+        counter = 0
         for i in range(len(str)):
             if i.isnumeric():
                 counter +=1
