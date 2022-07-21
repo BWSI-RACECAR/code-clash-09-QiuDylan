@@ -22,6 +22,9 @@ Input: “.ON0123” ; Output: 24
 Input: “.BC.234” ; Output: 168
 """
 
+from os import kill
+
+
 class Solution:
     def licensePlate(self,str):
         # type str: string
@@ -33,16 +36,26 @@ class Solution:
         numbers  = '1234567890'
         dot =0 
         count = 0
-        counter = 0
-        for i in (str):
-            if i.isnumeric():
-                counter +=1
-            if i.isalpha():
+        k = 0
+        
+
+        for i in range(0,3):
+            if str[i]== '.':
                 count +=1
-            if i == '.':
-                dot +=1 
-        if (len(alphabet) - (count)) != 0 or (len(numbers)- (counter)) != 0:
-            output = (len(alphabet) - (count))* (len(numbers)- (counter)) *dot 
+        for i in range(3,37:
+            if str[i]== '.':
+                k +=1
+        output = 1
+
+        for i in range(24,24+c):
+            output *=i 
+
+        for i in range(7, 7+k):
+            output *=i 
+
+
+
+
         return output
 
 
