@@ -18,7 +18,7 @@ The input will be passed as a string and any blurred characters will be written 
 
 Test Cases: 
 Input: “ABC123.” ; Output: 7
-Input: “.ON01123” ; Output: 24
+Input: “.ON0123” ; Output: 24
 Input: “.BC.234” ; Output: 168
 """
 
@@ -42,7 +42,7 @@ class Solution:
             if i == '.':
                 dot +=1 
         if (len(alphabet) - (count)) != 0 or (len(numbers)- (counter)) != 0:
-            output = (len(alphabet) - (count))* (len(numbers)- (counter)) 
+            output = (len(alphabet) - (count))* (len(numbers)- (counter)) *dot 
         return output
 
 
