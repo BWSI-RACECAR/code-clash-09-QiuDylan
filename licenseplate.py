@@ -32,16 +32,16 @@ class Solution:
         alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
         numbers  = '1234567890'
         dot =0 
-        count = []
+        count = 0
         counter = []
         for i in range(len(str)):
-            if i in numbers:
-                counter.append(i)
-            if i in alphabet:
-                count.append(i)
+            if i.isnumeric():
+                counter +=1
+            if i.isalpha():
+                count +=1
             if i == '.':
                 dot +=1 
-        if (len(alphabet) - len(count)) != 0 or (len(numbers)- len(counter)) != 0:
+        if (len(alphabet) - (count)) != 0 or (len(numbers)- (counter)) != 0:
             output = (len(alphabet) - len(count))* (len(numbers)- len(counter)) 
         return output
 
