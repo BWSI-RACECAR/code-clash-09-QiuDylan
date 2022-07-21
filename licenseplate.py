@@ -41,8 +41,8 @@ class Solution:
 
         for i in range(0,3):
             if str[i]== '.':
-                count +=1
-        for i in range(3,37:
+                count +=1s
+        for i in range(3,7):
             if str[i]== '.':
                 k +=1
         output = 1
